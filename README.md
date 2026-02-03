@@ -8,7 +8,7 @@ Eu sou a Samira Caetano e esse foi o meu _primeiro_ projeto web. 💻
 
 ## Acesse o site e se divirta no _outro lado_!
 
-- [ParanormalFlix](https://sammycaetano.github.io/ParanormalFlix/)
+- [ParanormalFlix](https://staarscaetano.github.io/paranormalflix/)
 
 ## Deixe o seu feedback! Diga me o que você gostou e o que têm a melhorar!
 - Instagram: [@staarscaetano](https://www.instagram.com/staarscaetano?igsh=dXRydTVxcDlrcmE2)
