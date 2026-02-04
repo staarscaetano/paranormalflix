@@ -1,4 +1,4 @@
-## 👻 ParanormalFlix
+## 🩸 ParanormalFlix
 
 ParanormalFlix é um **projeto web desenvolvido com HTML e CSS**, criado como parte do meu processo de aprendizado em desenvolvimento web.
 
