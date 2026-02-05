@@ -10,7 +10,7 @@ Este foi um dos meus **primeiros projetos práticos**, desenvolvido durante o en
 - VS Code
 
 ## 🌐 **Acesse o projeto**
-- 👉 https://staarscaetano.github.io/ParanormalFlix/
+- 👉 https://staarscaetano.github.io/paranormalflix/
 
 ## 📚 **O que foi praticado neste projeto**
 - Estruturação de páginas utilizando HTML
