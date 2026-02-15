@@ -103,3 +103,23 @@ p {
     background: #b33b44;
     border-radius: 10px;
 }
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .chamada {
+        flex-direction: column;   /* empilha */
+        padding: 40px 20px;       /* cria margem lateral */
+        text-align: center;
+    }
+
+    .chamada-texto {
+        margin-right: 0;
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
