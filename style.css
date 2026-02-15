@@ -1,30 +1,33 @@
 body {
     color: white;
     background: black;
-    margin: 0px;
-    font-family: "Chakra Petch", sans-serif;
+    margin: 0;
+    font-family: "Noto sans", sans-serif;
     margin-bottom: 100px;
 }
 
-header{
-    border-bottom: solid 2px rgb(39, 81, 61);
+/* HEADER */
+
+header {
+    border-bottom: solid 2px #b33b44;
     padding: 20px;
     font-size: 32px;
-    color: rgb(39, 81, 61);
+    color: #b33b44;
 }
+
+/* SEÇÃO PRINCIPAL */
 
 .chamada {
-    background: rgb(4, 34, 19);
-    padding-bottom: 80px;
-    padding-top: 80px;
+    background: #711e2b;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    gap: 40px;
 }
 
-.chamada-texto{
-    margin-right: 5%;
-
+.chamada-texto {
+    max-width: 500px;
 }
 
 h1 {
@@ -35,29 +38,68 @@ p {
     font-size: 20px;
 }
 
-.categoria-videos{
-    display: flex;
-    overflow: auto;
-    gap: 10px;
-}
+/* CATEGORIA */
 
-.categoria{
-    padding-left: 20px;
-    padding-right: 20px;
+.categoria {
+    padding: 0 20px;
     margin-top: 50px;
 }
+
+.categoria h2 {
+    color: #b33b44;
+}
+
+/* CONTAINER DOS VÍDEOS */
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;      /* scroll horizontal */
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* Impede quebrar linha */
+.categoria-videos a {
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: white;
+}
+
+/* IMAGENS */
 
 .categoria-videos img {
     opacity: 0.5;
     height: 200px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .categoria-videos img:hover {
-    opacity: 1.0;
-    border: 3px solid green;
+    opacity: 1;
+    border: 3px solid #b33b44;
 }
 
-.categoria h2 {
-    color: rgb(39, 81, 61);
-    
+/* SCROLLBAR PERSONALIZADA (Chrome/Edge) */
+
+.categoria-videos::-webkit-scrollbar {
+    height: 8px;
+}
+
+.categoria-videos::-webkit-scrollbar-thumb {
+    background: #b33b44;
+    border-radius: 10px;
 }
