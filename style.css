@@ -2,8 +2,8 @@ body {
     color: white;
     background: black;
     margin: 0;
-    font-family: "Noto sans", sans-serif;
-    margin-bottom: 100px;
+    font-family: "Unica One", sans-serif;
+    overflow-x: hidden; /* evita scroll lateral */
 }
 
 /* HEADER */
@@ -13,17 +13,19 @@ header {
     padding: 20px;
     font-size: 32px;
     color: #b33b44;
+    text-align: left;
 }
 
 /* SEÇÃO PRINCIPAL */
 
 .chamada {
     background: #711e2b;
-    padding: 80px 0;
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .chamada-texto {
@@ -38,28 +40,9 @@ p {
     font-size: 20px;
 }
 
-/* CATEGORIA */
-
-.categoria {
-    padding: 0 20px;
-    margin-top: 50px;
-}
-
-.categoria h2 {
-    color: #b33b44;
-}
-
-/* CONTAINER DOS VÍDEOS */
-
-.categoria-videos {
-    display: flex;
-    overflow-x: auto;      /* scroll horizontal */
-    gap: 15px;
-    padding-bottom: 15px;
-}
+/* VIDEO RESPONSIVO */
 
 .video-container {
-    position: relative;
     width: 100%;
     max-width: 560px;
     aspect-ratio: 16 / 9;
@@ -71,20 +54,42 @@ p {
     border-radius: 10px;
 }
 
+/* CATEGORIA */
 
-/* Impede quebrar linha */
+.categoria {
+    padding: 40px 20px;
+}
+
+.categoria h2 a {
+    text-decoration: underline;
+    color: #b33b44;
+    transition: 0.3s;
+}
+
+.categoria h2 a:hover {
+    letter-spacing: 2px;
+}
+
+
+/* SCROLL HORIZONTAL */
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
 .categoria-videos a {
     flex: 0 0 auto;
     text-decoration: none;
     color: white;
 }
 
-/* IMAGENS */
-
 .categoria-videos img {
-    opacity: 0.5;
     height: 200px;
     border-radius: 8px;
+    opacity: 0.5;
     transition: 0.3s;
 }
 
@@ -93,7 +98,7 @@ p {
     border: 3px solid #b33b44;
 }
 
-/* SCROLLBAR PERSONALIZADA (Chrome/Edge) */
+/* Scroll custom */
 
 .categoria-videos::-webkit-scrollbar {
     height: 8px;
@@ -109,17 +114,20 @@ p {
 @media (max-width: 768px) {
 
     .chamada {
-        flex-direction: column;   /* empilha */
-        padding: 40px 20px;       /* cria margem lateral */
+        flex-direction: column;
         text-align: center;
+        padding: 40px 20px;
     }
 
-    .chamada-texto {
-        margin-right: 0;
+    h1 {
+        font-size: 28px;
     }
 
-    .video-container {
-        width: 100%;
-        max-width: 100%;
+    p {
+        font-size: 16px;
+    }
+
+    .categoria-videos img {
+        height: 150px;
     }
 }
